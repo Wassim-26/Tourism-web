@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +16,9 @@ nav {
 }
 nav > .left > .title {
   font-size: 28px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
   animation: box-transforme 1s ease infinite alternate;
 }
 @keyframes box-transforme {
@@ -20,11 +26,11 @@ nav > .left > .title {
     transform: scale(1);
   }
   to {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 }
 nav > .left > .title > span {
-  color: red;
+  color: #28df99;
 }
 .links-parent {
   position: relative;
@@ -38,18 +44,19 @@ nav .nav-link {
   color: rgba(128, 128, 128, 0.667);
   height: 62px;
   display: flex;
+  font-family: "Eagle Lake", serif;
   justify-content: center;
   align-items: center;
   position: relative;
   padding: 0 12px;
 }
 nav .nav-link:hover {
-  color: rgba(181, 24, 24, 0.747);
+  color: #09d6ad;
   cursor: pointer;
-  background-color: rgba(218, 71, 71, 0.203);
+  background-color: rgba(71, 218, 169, 0.203);
 }
 .dropdown-menu {
-  background-color: rgba(228, 29, 29, 0.861);
+  background-color: #09d6ad;
   position: absolute;
   top: 100%;
   right: 0;
@@ -63,7 +70,7 @@ nav .nav-link::before {
   content: "";
   width: 0;
   height: 4px;
-  background-color: rgba(212, 44, 44, 0.753);
+  background-color: #99f3bd;
   top: 0;
   position: absolute;
   left: 0;
@@ -77,7 +84,7 @@ nav .dropdown-item {
   padding: 6px 12px;
 }
 nav .dropdown-item:hover {
-  background-color: rgba(227, 132, 132, 0.89);
+  background-color: #6fdfc9;
   color: white;
   cursor: pointer;
 }
@@ -120,7 +127,7 @@ nav .dropdown-item:hover {
   padding: 0;
   margin: 12px;
 }
-header {
+#header {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5),
@@ -134,7 +141,7 @@ header {
   flex-direction: column;
   z-index: 1;
 }
-header .text {
+#header .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,10 +149,11 @@ header .text {
   margin-top: 172px;
   color: rgb(255, 255, 255);
 }
-header .text h2 {
+#header .text h2 {
   font-size: 28px;
+  font-family: "Eagle Lake", serif;
 }
-header input {
+#header input {
   width: 390px;
   height: 52px;
   padding: 22px 62px;
@@ -155,31 +163,31 @@ header input {
   border: none;
   outline: none;
 }
-header .location {
+#header .location {
   border-left: 1px solid rgba(137, 136, 136, 0.836);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-header .search {
+#header .search {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-header .search-svg {
+#header .search-svg {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header .liste {
+#header .liste {
   position: relative;
   left: 48px;
 }
-header .location-logo {
+#header .location-logo {
   position: relative;
   left: -372px;
 }
-header button {
+#header button {
   padding: 24px 26px;
   position: relative;
   left: -12px;
@@ -187,18 +195,18 @@ header button {
   border-radius: 6px;
   border: none;
   height: 52px;
-  background-color: #09d6ad;
+  background-color: #28df99;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header button:hover {
-  background-color: #0cca98;
+#header button:hover {
+  background-color: #99f3bd;
   transition: 0.5s all ease;
   cursor: pointer;
 }
-header button svg {
+#header button svg {
   margin: -2px 4px;
 }
 #boxes-all {
@@ -214,7 +222,7 @@ header button svg {
   margin-top: -12px;
 }
 #boxes-all .box-container .mini-box {
-  background-color: #00ffcc;
+  background-color: #28df99;
   margin: 0px 46px;
   width: 190px;
   height: 190px;
@@ -236,6 +244,7 @@ header button svg {
 }
 #how-it-works-container {
   margin-top: 152px;
+  padding: 2px 0;
 }
 #how-it-works-container .text {
   text-align: center;
@@ -260,13 +269,13 @@ header button svg {
   border-radius: 8px;
 }
 #how-it-works-container .mini-box:hover {
-  background-color: #26ffaf;
+  background-color: #28df99;
   transition: 1s all ease;
 }
 
 #how-it-works-container .mini-box:hover p {
   color: white;
-  transition: 1s all ease;
+  transition: 0.6s all ease;
 }
 #how-it-works-container p {
   text-align: center;
@@ -274,8 +283,7 @@ header button svg {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #how-it-works-container h3 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Eagle Lake", serif;
 }
 
 #how-it-works-container button {
@@ -284,6 +292,7 @@ header button svg {
   border-radius: 6px;
   color: rgb(192, 38, 38);
   border: 1px solid rgb(179, 177, 177);
+  cursor: pointer;
 }
 #how-it-works-container .logo {
   background-color: rgb(236, 227, 227);
@@ -318,7 +327,7 @@ header button svg {
   transition: 1s all ease;
   transform: scale(1.05);
   cursor: pointer;
-  background-color: #5af7ff;
+  background-color: #d2f6c5;
 }
 #some-destinations-for-vacation-container .left {
   flex: 1;
@@ -333,6 +342,72 @@ header button svg {
   border-bottom-left-radius: 6px;
 }
 #some-destinations-for-vacation-container .right h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Eagle Lake", serif;
+}
+#about-container {
+  display: flex;
+  padding: 18px 24px;
+  background-color: #28df99;
+}
+#about-container .left {
+  margin-right: 16px;
+  padding: 0 22px;
+}
+
+#about-container .text {
+  text-align: center;
+}
+#about-container .left .img-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#about-container img {
+  border: 2px solid red;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#about-container .contact-container {
+  background-color: rgba(0, 242, 255, 0.811);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  border: none;
+  border-radius: 6px;
+}
+#about-container .contact-container .btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #28df99;
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+}
+#about-container .contact-container .btn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.4s all ease;
+}
+#about-container .contact-container input {
+  width: 80%;
+  border-radius: 6px;
+  height: 22px;
+  border: none;
+  margin-bottom: 12px;
+  outline: none;
+  padding: 8px 12px;
+}
+textarea {
+  margin-bottom: 12px;
+  width: 80%;
+  padding: 8px 12px;
+  outline: none;
+  height: 70px;
+  resize: none;
+  border: none;
 }
